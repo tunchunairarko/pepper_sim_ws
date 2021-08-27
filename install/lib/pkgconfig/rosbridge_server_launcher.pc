@@ -1,0 +1,8 @@
+prefix=/home/tunchunairarko/pepper_sim_ws/install
+
+Name: rosbridge_server_launcher
+Description: Description of rosbridge_server_launcher
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

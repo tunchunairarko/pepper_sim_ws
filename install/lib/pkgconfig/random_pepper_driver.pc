@@ -1,0 +1,8 @@
+prefix=/home/tunchunairarko/pepper_sim_ws/install
+
+Name: random_pepper_driver
+Description: Description of random_pepper_driver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

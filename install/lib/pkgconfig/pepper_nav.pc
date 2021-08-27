@@ -1,0 +1,8 @@
+prefix=/home/tunchunairarko/pepper_sim_ws/install
+
+Name: pepper_nav
+Description: Description of pepper_nav
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

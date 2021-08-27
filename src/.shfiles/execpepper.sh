@@ -12,7 +12,8 @@ case $OPC in
 		OPC1=$(dialog --menu "Gazebo options: " 0 0 0 \
 		1 "Basic world" \
 		2 "Museum world" \
-		3 "Office world" --stdout)
+		3 "Test zone world" \
+		4 "Office world" --stdout)
 		case $OPC1 in
 			1)
 			gnome-terminal -- basic.sh
@@ -23,6 +24,10 @@ case $OPC in
 			execpepper.sh;;
 
 			3)
+			gnome-terminal -- test_zone.sh
+			execpepper.sh;;
+
+			4)
 			gnome-terminal -- office.sh
 			execpepper.sh;;
 		esac
@@ -33,7 +38,8 @@ case $OPC in
 		1 "RQT control" \
 		2 "Joystick control" \
 		3 "Random control" \
-		4 "Navigation control" --stdout)
+		4 "Teleop_keyboard" \
+		5 "Navigation control" --stdout)
 		case $OPC2 in
 			1)
 			gnome-terminal -- rqt.sh
@@ -49,6 +55,10 @@ case $OPC in
 			execpepper.sh;;
 
 			4)
+			gnome-terminal -- teleop_twist_keyboard.sh
+			execpepper.sh;;
+
+			5)
 			gnome-terminal -- nav.sh
 			execpepper.sh;;
 		esac
